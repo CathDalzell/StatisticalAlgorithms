@@ -17,6 +17,9 @@ public class PersonTest {
 		lecturer.walk(3);
 		me.walk(15);
 		bob.study();
+		
+		System.out.println("The student's name is " + bob.getName());
+		System.out.println("The student's age is " + bob.getAge()); // When it does not know the age it defaults to 0
 
 	}
 

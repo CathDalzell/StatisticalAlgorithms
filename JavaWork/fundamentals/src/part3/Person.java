@@ -6,12 +6,16 @@ public class Person {
 	int height;
 	String name;
 	
+// The constructors
+	
 	public Person() {
 		this.name = "Unknown person";
+		
 	}
 	
 	public Person(int myAge) {
 		this.age = myAge;
+		this.name = "unknown person";
 	}
 	
 	public Person(String myName) {
@@ -22,6 +26,18 @@ public class Person {
 		this.age = myAge;
 		this.name =  myName;
 	}
+
+// The getters
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+
+//Finally something of substance
 	
 	public void walk() {
 		System.out.println("Walking ...");
